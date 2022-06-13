@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/main.js"></script>
+    <link href="fonts/fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <header id="header">
+        <div class="header-contairner">
+            <div class="header-it">
+                <button onclick="buttonSearch_click()" class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="header-it open">
+                <a class="link-logo" href="HomePage.html">
+                    <img class="img-Logo" src="./img/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-it2 open">
+                <a class="link-download" href="https://apps.apple.com/us/app/id1517535177">
+                    <img class="img-download" src="./img/appStore.png" alt="App Store">
+                </a>
+                <a class="link-download" href="https://play.google.com/store/apps/details?id=com.digidinos.glocal">
+                    <img class="img-download" src="./img/ggPlay.png" alt="App Store">
+                </a>
+            </div>
+            <div class="header-list close">
+                <div onclick="openMenuModal()">
+                    <i  class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Header Mobile -->
+        <div class="header-contairner close">
+            <div class="header-itR rsp-logo">
+                <a class="link-logo" href="HomePage.html">
+                    <img class="img-Logo" src="./img/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-itR">
+                <a class="link-download" href="https://apps.apple.com/us/app/id1517535177">
+                    <img class="img-download" src="./img/appStore.png" alt="App Store">
+                </a>
+                <a class="link-download" href="https://play.google.com/store/apps/details?id=com.digidinos.glocal">
+                    <img class="img-download" src="./img/ggPlay.png" alt="App Store">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="body-website">
+        <div id="menu" class="open">
+            <a href="HomePage.html" class="menu-item hoverRed">
+                <p class="menu-content">トップ</p>
+            </a>
+            <a href="Category.html" class="menu-item hoverYellow">
+                <p class="menu-content">平和・安全</p>
+            </a>
+            <a href="#" class="menu-item hoverGreen">
+                <p class="menu-content">農業・漁業</p>
+            </a>
+            <a href="#" class="menu-item hoverBlue">
+                <p class="menu-content">交通・インフラ</p>
+            </a>
+            <a href="#" class="menu-item hoverViolet">
+                <p class="menu-content">エネルギー・環境</p>
+            </a>
+            <a href="#" class="menu-item hoverRed">
+                <p class="menu-content">政治</p>
+            </a>
+            <a href="#" class="menu-item hoverYellow">
+                <p class="menu-content">人権・ジェンダー</p>
+            </a>
+            <a href="#" class="menu-item hoverGreen">
+                <p class="menu-content">経済・民間連携</p>
+            </a>
+            <a href="#" class="menu-item hoverBlue">
+                <p class="menu-content">テクノロジー</p>
+            </a>
+            <a href="#" class="menu-item hoverViolet">
+                <p class="menu-content">教育</p> 
+            </a>
+            <a href="#" class="menu-item hoverRed">
+                <p class="menu-content">保健医療</p>
+            </a>
+            <a href="#" class="menu-item hoverYellow">
+                <p class="menu-content">SDGs</p>
+            </a>
+            <a href="#" class="menu-item hoverGreen">
+                <p class="menu-content">英字記事</p>
+            </a>
+            <a href="#" class="menu-item hoverBlue">
+                <p class="menu-content">コラム</p>
+            </a>
+        </div>
+        <div class="content">
+            <div class="search-contairner">
+                <input class="input-search" type="text" placeholder="Search...">
+                <button onclick="closeSearchModal()" class="button-search">
+                    キャンセル
+                </button>
+            </div>
+            <div class="detail">
+                <div class="separation"></div>
+                <div class="top-news">
+                    <div class="top-News-contairner">
+                        <a href="Detail.html" class="top-News-type1">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div>
+                                    <img src="./img/News3.png" alt="">
+                                    <p class="name-news">GOOGLE TOLD TO PAY AUSTRALIAN POLITICIAN $515,000 FOR DEFAMATION</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="top-News-type2">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div>
+                                    <img src="./img/News2.png" alt="">
+                                    <p class="name-news">GOOGLE TOLD TO PAY AUSTRALIAN POLITICIAN $515,000 FOR DEFAMATION</p>
+                                </div>
+                                <div class="marginTop">
+                                    <img src="./img/News1.png" alt="">
+                                    <p class="name-news">GOOGLE TOLD TO PAY AUSTRALIAN POLITICIAN $515,000 FOR DEFAMATION</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separation"></div>
+                <div class="element">
+                    <div id="main">
+                        <div class="Category-title">
+                            <p class="Category-title-content1">トップニュース</p>
+                        </div>
+                        <div class="main-contairner">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <a href="Detail.html" class="card">
+                                        <div class="card-img">
+                                            <img src="./img/News3.png" class="img-fluid">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">ALJAZEERA</h4>
+                                            <p class="card-text Describe">
+                                                GOOGLE TOLD TO PAY AUSTRALIAN POLITICIAN $515,000 FOR DEFAMATION
+                                            </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <img src="./img/logoNews.png" alt="logo" class="logoNews">
+                                            ビジネスワイヤ
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <a href="#" class="card">
+                                        <div class="card-img">
+                                            <img src="./img/News2.png" class="img-fluid">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">ALJAZEERA</h4>
+                                            <p class="card-text Describe">
+                                                GOOGLE TOLD TO PAY AUSTRALIAN POLITICIAN $515,000 FOR DEFAMATION
+                                            </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <img src="./img/logoNews.png" alt="logo" class="logoNews">
+                                            ビジネスワイヤ
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <a href="#" class="card">
+                                        <div class="card-img">
+                                            <img src="./img/News1.png" class="img-fluid">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">ALJAZEERA</h4>
+                                            <p class="card-text Describe">
+                                                GOOGLE TOLD TO PAY AUSTRALIAN POLITICIAN $515,000 FOR DEFAMATION
+                                            </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <img src="./img/logoNews.png" alt="logo" class="logoNews">
+                                            ビジネスワイヤ
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="right">
+                        <div class="Category-title">
+                            <p class="Category-title-content2">ランキング</p>
+                        </div>
+                        <div class="right-contairner">
+                            <div class="col-lg-12 col-md-4 col-sm-12">
+                                <div class="right-it">
+                                    <a class="right-it" href="#">
+                                        <img src="./img/News3.png" alt="">
+                                        <p class="name-news-right">
+                                            GOOGLE TOLD TO PAY AUSTRALIAN POLITICIAN
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="right-it">
+                                    <a class="right-it" href="#">
+                                        <img src="./img/News3.png" alt="">
+                                        <p class="name-news-right">
+                                            GOOGLE TOLD TO PAY AUSTRALIAN POLITICIAN
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="right-it">
+                                    <a class="right-it" href="#">
+                                        <img src="./img/News3.png" alt="">
+                                        <p class="name-news-right">
+                                            GOOGLE TOLD TO PAY AUSTRALIAN POLITICIAN
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="footer">
+                <div class="footer-content">
+                    COPYRIGHT©2020 GLOCAL ALL RIGHT RESERVED
+                </div>
+                <a href="#" class="policy">
+                    プライバシーポリシー
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-menu isClose">
+        <div class="menu-contairner">
+            <div class="close-modal">
+                <div onclick="closeMenuhModal()" class="btn-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <a href="HomePage.html" class="menu-item hoverRed">
+                <p class="menu-content">トップ</p>
+            </a>
+            <a href="Category.html" class="menu-item hoverYellow">
+                <p class="menu-content">平和・安全</p>
+            </a>
+            <a href="#" class="menu-item hoverGreen">
+                <p class="menu-content">農業・漁業</p>
+            </a>
+            <a href="#" class="menu-item hoverBlue">
+                <p class="menu-content">交通・インフラ</p>
+            </a>
+            <a href="#" class="menu-item hoverViolet">
+                <p class="menu-content">エネルギー・環境</p>
+            </a>
+            <a href="#" class="menu-item hoverRed">
+                <p class="menu-content">政治</p>
+            </a>
+            <a href="#" class="menu-item hoverYellow">
+                <p class="menu-content">人権・ジェンダー</p>
+            </a>
+            <a href="#" class="menu-item hoverGreen">
+                <p class="menu-content">経済・民間連携</p>
+            </a>
+            <a href="#" class="menu-item hoverBlue">
+                <p class="menu-content">テクノロジー</p>
+            </a>
+            <a href="#" class="menu-item hoverViolet">
+                <p class="menu-content">教育</p> 
+            </a>
+            <a href="#" class="menu-item hoverRed">
+                <p class="menu-content">保健医療</p>
+            </a>
+            <a href="#" class="menu-item hoverYellow">
+                <p class="menu-content">SDGs</p>
+            </a>
+            <a href="#" class="menu-item hoverGreen">
+                <p class="menu-content">英字記事</p>
+            </a>
+            <a href="#" class="menu-item hoverBlue">
+                <p class="menu-content">コラム</p>
+            </a>
+        </div>
+    </div>
+</body>
+    <script>
+        function buttonSearch_click(){
+            try{
+                openSearchModal();
+            }
+            catch{
+                closeSearchModal();
+            }
+        }
+        function openSearchModal(){
+            const searchModal= document.querySelector('.search-contairner');
+            searchModal.classList.add('search-contairnerO');
+            searchModal.classList.remove('search-contairner');
+        }
+        function closeSearchModal(){
+            const searchModal= document.querySelector('.search-contairnerO');
+            searchModal.classList.add('search-contairner');
+            searchModal.classList.remove('search-contairnerO');
+        }
+        function openMenuModal(){
+            const searchModal= document.querySelector('.isClose');
+            searchModal.classList.add('isOpen');
+            searchModal.classList.remove('isClose');
+        }
+        function closeMenuhModal(){
+            const searchModal= document.querySelector('.isOpen');
+            searchModal.classList.add('isClose');
+            searchModal.classList.remove('isOpen');
+            
+        }
+    </script>
+</html>
